@@ -83,7 +83,7 @@ a, a:hover, a:focus, a:active {
 }
 
 #brdtitle {
-	margin: 9.5em 0 0 15em;
+	margin: 9.5em 0 0 13.5em;
 }
 
 #brdtitle .forum-title {
@@ -105,27 +105,31 @@ a, a:hover, a:focus, a:active {
 
 #brdmenu .avatar {
 	background: #fff;
-	/*box-shadow: 0 0 1px #283d67;*/
 	box-shadow: 0 0 4px rgba(40, 61, 103, 0.35);
 	border-radius: 6em;
-	bottom: -4em;
-	height: 12em;
+	bottom: -3em;
+	height: 10em;
 	left: 2em;
-	overflow: hidden;
-	padding: 1em;
+	padding: 0.5em;
 	position: absolute;
-	width: 12em;
+	width: 10em;
 }
 
 #brdmenu .avatar img {
 	border-radius: 6em;
-	height: 10em;
-	width: 10em;
+	height: 9em;
+	width: 9em;
+}
+
+#brdmenu .avatar .btn {
+	position: relative;
+	top: -1em;
+	width: 100%;
 }
 
 #brdmenu .username {
 	color: #fff;
-	margin: 0.5em 0 0 9em;
+	margin: 0.5em 0 0 8em;
 }
 
 #brdmenu .username .edit-profile {
@@ -159,14 +163,14 @@ a, a:hover, a:focus, a:active {
 #brdmenu .menu ul li a {
 	color: #fff;
 	line-height: 2.5em;
-	margin: 0.5em 0.25em;
-	padding: 0em 0.5em;
+	margin: 0;
+	padding: 0.5em 1em;
 }
 
 #brdmenu .menu ul li a:hover,
 #brdmenu .menu ul li a:focus {
 	background-color: #fff;
-	border-radius: 0.25em;
+	border-radius: 0;
 	color: #283d67;
 }
 
@@ -179,7 +183,19 @@ a, a:hover, a:focus, a:active {
 }
 
 #brdwelcome .nav {
-	margin: 0.5em 0 0.5em 14.5em;
+	margin: 0 0 0 13.5em;
+}
+
+#brdwelcome .nav a {
+	border-radius: 0;
+	line-height: 2em;
+	padding: 0.5em 1em;
+}
+
+#brdwelcome .nav a:hover,  #brdwelcome .nav a:focus {
+	background: #294b7a;
+	color: #fff;
+	text-shadow: 0 1px 0 #283d67;
 }
 
 #brdannounce {
@@ -267,6 +283,7 @@ a, a:hover, a:focus, a:active {
 
 .idx > .category-title,
 .vfx > .forum-title {
+	background: rgba(72, 112, 162, 0.75);
 	border-radius: 0.2em 0.2em 0 0;
 	color: #fff;
 	font-size: 1.5em;
@@ -1263,10 +1280,6 @@ a, a:hover, a:focus, a:active {
 	border-radius: 0 0 0.25em 0.25em;
 	border-top: 0;
 	padding: 2em 1em;
-}
-
-.profile-avatar-edit .btn {
-	margin-left: 0.6em;
 }
 
 .profile-editor .tab-pane {

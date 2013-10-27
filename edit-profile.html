@@ -33,6 +33,7 @@
 
 					<div class="avatar">
 						<img src="assets/img/cyrano.jpg" alt="" />
+						<a class="btn btn-primary">New avatar</a>
 					</div>
 
 					<!--<nav class="menu">
@@ -46,10 +47,10 @@
 					</nav>-->
 
 					<ul class="nav nav-tabs profile-edit-tabs" id="profile-edit-tabs">
-						<li class="active"><a id="tab-essentials" href="#essentials" data-toggle="tab">Essentials</a></li>
-						<li><a id="tab-display" href="#display" data-toggle="tab">Display</a></li>
-						<li><a id="tab-settings" href="#settings" data-toggle="tab">Settings</a></li>
-						<li><a id="tab-privacy" href="#privacy" data-toggle="tab">Privacy</a></li>
+						<li class="active"><a class="tab-links" id="tab-essentials" href="#essentials" data-toggle="tab">Essentials</a></li>
+						<li><a class="tab-links" id="tab-display" href="#display" data-toggle="tab">Display</a></li>
+						<li><a class="tab-links" id="tab-settings" href="#settings" data-toggle="tab">Settings</a></li>
+						<li><a class="tab-links" id="tab-privacy" href="#privacy" data-toggle="tab">Privacy</a></li>
 						<li class="pull-right"><a href="index.html" class="tip profile-quit" data-original-title="Back to the forum"></a></li>
 						<li class="pull-right"><a class="tip profile-save" data-original-title="Save"></a></li>
 						<li class="pull-right"><a class="tip profile-default" data-original-title="Set default"></a></li>
@@ -87,11 +88,11 @@
 
 				<div id="profile-editor" class="profile-editor clearfix">
 
-					<div class="profile-avatar-edit text-center col-md-2 col-sm-2 col-xs-3">
-						<a class="btn btn-primary">Upload a new avatar</a>
-					</div>
+					<!--<div class="profile-avatar-edit text-center col-md-2 col-sm-2 col-xs-3">
+						<a class="btn btn-primary">New avatar</a>
+					</div>-->
 
-					<div class="tab-content col-md-10 col-sm-10 col-xs-9">
+					<div class="tab-content col-md-10 col-sm-10 col-xs-9 col-md-offset-2">
 
 						<div class="tab-pane active" id="essentials">
 							<div class="row">
@@ -415,6 +416,9 @@
 				container: 'body',
 				placement: 'bottom'
 			});
+			/*$('.tab-links').mouseover(function() {
+				$(this).tab('show');
+			});*/
 		})(jQuery);
 		</script>
 
