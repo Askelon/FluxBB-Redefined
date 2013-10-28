@@ -13,6 +13,7 @@
 
 		<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/entypo.css" />
 
 		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Cantarell|Archivo+Narrow|PT+Sans+Caption|Telex" rel="stylesheet" type="text/css">
 
@@ -90,7 +91,7 @@
 
 					<h2 class="topic-title"><span>User list</span></h2>
 
-					<div class="topic-navigation clearfix">
+					<div class="top-navigation clearfix">
 						<ul class="pagination pagelink pull-left">
 							<li class="disabled"><a><span class="pages-label">Pages: </span></a></li>
 							<li class="disabled"><a><strong class="item1">1</strong></a></li>
@@ -101,7 +102,15 @@
 							<li><a href="viewforum.html">7</a></li>
 							<li><a href="viewforum.html">Next</a></li>
 						</ul>
-						<div class="btn-group postlink pull-right">
+						<ul class="nav nav-pills title-icons pull-right">
+							<li><a id="userlist-list" href="#"><span class="icon-list icon-2x"></span></a></li>
+							<li><a id="userlist-big" href="#"><span class="icon-layout icon-2x"></span></a></li>
+						</ul>
+					</div>
+
+					<div id="userlist" class="userlist clearfix">
+
+						<div class="user-search col-md-12 text-center">
 							<div class="form-inline">
 								<div class="form-group">
 									<input class="form-control" type="text" name="username" value="" size="25" maxlength="25" placeholder="Username"></label>
@@ -128,15 +137,12 @@
 									</select>
 								</div>
 								<div class="form-group">
-					                            	<input class="btn btn-primary" type="submit" name="search" value="Submit" accesskey="s">
+					                            	<input class="btn btn-primary" type="submit" value="Search" />
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div id="userlist" class="userlist">
-
-						<div class="user-badge col-md-4 clearfix">
+						<div class="user-badge col-md-3">
 							<div class="user-avatar col-md-4">
 								<img src="assets/img/christian.jpg" alt="" />
 							</div>
@@ -144,12 +150,12 @@
 								<div class="user-name"><h4>Christian</h4></div>
 								<div class="user-title"><h5>Baron de Neuvillette</h5></div>
 								<div class="user-meta">
-									<span class="user-registered"></span>
+									<span class="user-registered">1626-10-05</span>
 								</div>
 							</div>
 						</div>
 
-						<div class="user-badge col-md-4 clearfix">
+						<div class="user-badge col-md-3">
 							<div class="user-avatar col-md-4">
 								<img src="assets/img/cyrano.jpg" alt="" />
 							</div>
@@ -157,7 +163,59 @@
 								<div class="user-name"><h4>Cyrano</h4></div>
 								<div class="user-title"><h5>Poet, duellist, musician</h5></div>
 								<div class="user-meta">
-									<span class="user-registered"></span>
+									<span class="user-registered">1619-03-06</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="user-badge col-md-3">
+							<div class="user-avatar col-md-4">
+								<img src="assets/img/deguiche.jpg" alt="" />
+							</div>
+							<div class="user-detail col-md-8">
+								<div class="user-name"><h4>De Guiche</h4></div>
+								<div class="user-title"><h5>Maréchal de France</h5></div>
+								<div class="user-meta">
+									<span class="user-registered">1604-07-12</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="user-badge col-md-3">
+							<div class="user-avatar col-md-4">
+								<img src="assets/img/lebret.jpg" alt="" />
+							</div>
+							<div class="user-detail col-md-8">
+								<div class="user-name"><h4>Le Bret</h4></div>
+								<div class="user-title"><h5>Mousquetaire du Roi</h5></div>
+								<div class="user-meta">
+									<span class="user-registered">1618-02-24</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="user-badge col-md-3">
+							<div class="user-avatar col-md-4">
+								<img src="assets/img/roxane.jpg" alt="" />
+							</div>
+							<div class="user-detail col-md-8">
+								<div class="user-name"><h4>Roxane</h4></div>
+								<div class="user-title"><h5>Précieuse</h5></div>
+								<div class="user-meta">
+									<span class="user-registered">1622-08-14</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="user-badge col-md-3">
+							<div class="user-avatar col-md-4">
+								<img src="assets/img/valvert.jpg" alt="" />
+							</div>
+							<div class="user-detail col-md-8">
+								<div class="user-name"><h4>Valvert</h4></div>
+								<div class="user-title"><h5>Vicomte</h5></div>
+								<div class="user-meta">
+									<span class="user-registered">1620-06-30</span>
 								</div>
 							</div>
 						</div>
@@ -229,6 +287,16 @@
 			$('.tip').tooltip({
 				container: 'body',
 				placement: 'bottom'
+			});
+			$('#userlist-big').on('click', function(e) {
+				$('.user-badge').removeClass('col-md-3 col-md-12').addClass('col-md-3');
+				$('.user-avatar').removeClass('col-md-4 col-md-1').addClass('col-md-4');
+				e.preventDefault();
+			});
+			$('#userlist-list').on('click', function(e) {
+				$('.user-badge').removeClass('col-md-3 col-md-12').addClass('col-md-12');
+				$('.user-avatar').removeClass('col-md-4 col-md-1').addClass('col-md-1');
+				e.preventDefault();
 			});
 		})(jQuery);
 		</script>
