@@ -846,6 +846,12 @@ a, a:hover, a:focus, a:active {
 	width: 100%
 }
 
+/* Post options */
+
+.post-options {
+	margin-top: 0.5em;
+}
+
 
 /*
  * BRDPROFILE
@@ -1329,22 +1335,6 @@ a, a:hover, a:focus, a:active {
 	margin-top: 2em;
 }
 
-.profile-editor .profile-signature-options .label::before {
-	font-family: 'entypo-social';
-	font-size: 1.25em;
-	margin-right: 0.25em;
-	position: relative;
-	top: 0.1em;
-}
-
-.profile-editor .profile-signature-options .label-success::before {
-	content: '\2713';
-}
-
-.profile-editor .profile-signature-options .label-danger::before {
-	content: '\274c';
-}
-
 .profile-editor .profile-location iframe {
 	min-height: 24em;
 	width: 100%;
@@ -1421,6 +1411,44 @@ a, a:hover, a:focus, a:active {
 	content: '\e729';
 }
 
+.userlist {
+	background: #fff;
+	border: 1px solid #cad7e1;
+	border-radius: 0.25em;
+	margin: 1.5em 0;
+	padding: 1em;
+}
+
+.user-badge {
+	
+}
+
+.user-badge .user-avatar {
+	float: left;
+}
+
+.user-badge .user-avatar img {
+	border-radius: 6em;
+	height: 100%;
+	width: 100%;
+}
+
+.user-badge .user-name {
+	
+}
+
+.user-badge .user-name h4 {
+	
+}
+
+.user-badge .user-meta {
+	
+}
+
+.user-badge .user-meta h5 {
+	
+}
+
 /*
  * BRDSTATS
  */
@@ -1432,16 +1460,25 @@ a, a:hover, a:focus, a:active {
 	padding: 1em;
 }
 
-#brdstats .inbox {
+#brdstats .users-online,
+#brdstats .forum-stats {
 	background: #f6f9fc;
 	margin-bottom: 1em;
 }
 
-/*#brdstats .inbox.col-xs-12.pull-right {
-	text-align: left;
-}*/
+#brdstats .users-online h5::before,
+#brdstats .forum-stats h5::before {
+	font-family: 'entypo';
+	font-size: 2em;
+}
 
+#brdstats .users-online h5::before {
+	content: '\1f465';
+}
 
+#brdstats .forum-stats h5::before {
+	content: '\1f4ca';
+}
 
 /*
  * BRDFOOTER
