@@ -15,7 +15,7 @@
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<link rel="stylesheet" type="text/css" href="assets/css/entypo.css" />
 
-		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Cantarell|Archivo+Narrow|PT+Sans+Caption|Telex" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Telex" rel="stylesheet" type="text/css">
 
 	</head>
 
@@ -146,8 +146,8 @@
 							<div class="user-avatar col-md-4">
 								<img src="assets/img/christian.jpg" alt="" />
 							</div>
-							<div class="user-detail col-md-8">
-								<div class="user-name"><h4>Christian</h4></div>
+							<div class="user-detail col-md-8 clearfix">
+								<div class="user-name"><h4><a href="profile.html">Christian</a></h4></div>
 								<div class="user-title"><h5>Baron de Neuvillette</h5></div>
 								<div class="user-meta">
 									<span class="user-registered">1626-10-05</span>
@@ -159,8 +159,8 @@
 							<div class="user-avatar col-md-4">
 								<img src="assets/img/cyrano.jpg" alt="" />
 							</div>
-							<div class="user-detail col-md-8">
-								<div class="user-name"><h4>Cyrano</h4></div>
+							<div class="user-detail col-md-8 clearfix">
+								<div class="user-name"><h4><a href="profile.html">Cyrano</a></h4></div>
 								<div class="user-title"><h5>Poet, duellist, musician</h5></div>
 								<div class="user-meta">
 									<span class="user-registered">1619-03-06</span>
@@ -172,8 +172,8 @@
 							<div class="user-avatar col-md-4">
 								<img src="assets/img/deguiche.jpg" alt="" />
 							</div>
-							<div class="user-detail col-md-8">
-								<div class="user-name"><h4>De Guiche</h4></div>
+							<div class="user-detail col-md-8 clearfix">
+								<div class="user-name"><h4><a href="profile.html">De Guiche</a></h4></div>
 								<div class="user-title"><h5>Maréchal de France</h5></div>
 								<div class="user-meta">
 									<span class="user-registered">1604-07-12</span>
@@ -185,8 +185,8 @@
 							<div class="user-avatar col-md-4">
 								<img src="assets/img/lebret.jpg" alt="" />
 							</div>
-							<div class="user-detail col-md-8">
-								<div class="user-name"><h4>Le Bret</h4></div>
+							<div class="user-detail col-md-8 clearfix">
+								<div class="user-name"><h4><a href="profile.html">Le Bret</a></h4></div>
 								<div class="user-title"><h5>Mousquetaire du Roi</h5></div>
 								<div class="user-meta">
 									<span class="user-registered">1618-02-24</span>
@@ -198,8 +198,8 @@
 							<div class="user-avatar col-md-4">
 								<img src="assets/img/roxane.jpg" alt="" />
 							</div>
-							<div class="user-detail col-md-8">
-								<div class="user-name"><h4>Roxane</h4></div>
+							<div class="user-detail col-md-8 clearfix">
+								<div class="user-name"><h4><a href="profile.html">Roxane</a></h4></div>
 								<div class="user-title"><h5>Précieuse</h5></div>
 								<div class="user-meta">
 									<span class="user-registered">1622-08-14</span>
@@ -211,8 +211,8 @@
 							<div class="user-avatar col-md-4">
 								<img src="assets/img/valvert.jpg" alt="" />
 							</div>
-							<div class="user-detail col-md-8">
-								<div class="user-name"><h4>Valvert</h4></div>
+							<div class="user-detail col-md-8 clearfix">
+								<div class="user-name"><h4><a href="profile.html">Valvert</a></h4></div>
 								<div class="user-title"><h5>Vicomte</h5></div>
 								<div class="user-meta">
 									<span class="user-registered">1620-06-30</span>
@@ -289,13 +289,17 @@
 				placement: 'bottom'
 			});
 			$('#userlist-big').on('click', function(e) {
-				$('.user-badge').removeClass('col-md-3 col-md-12').addClass('col-md-3');
+				$('.user-badge').removeClass('col-md-3 col-md-12 badge-list').addClass('col-md-3');
 				$('.user-avatar').removeClass('col-md-4 col-md-1').addClass('col-md-4');
+				$('.user-detail').removeClass('col-md-8 col-md-11').addClass('col-md-8');
+				$('.user-name, .user-title, .user-meta').removeClass('col-md-4');
 				e.preventDefault();
 			});
 			$('#userlist-list').on('click', function(e) {
-				$('.user-badge').removeClass('col-md-3 col-md-12').addClass('col-md-12');
+				$('.user-badge').removeClass('col-md-3 col-md-12 badge-list').addClass('col-md-12 badge-list');
 				$('.user-avatar').removeClass('col-md-4 col-md-1').addClass('col-md-1');
+				$('.user-detail').removeClass('col-md-8 col-md-11').addClass('col-md-11');
+				$('.user-name, .user-title, .user-meta').addClass('col-md-4');
 				e.preventDefault();
 			});
 		})(jQuery);

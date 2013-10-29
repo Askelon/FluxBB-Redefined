@@ -1242,6 +1242,81 @@ a, a:hover, a:focus, a:active {
 	margin: 0;
 }
 
+/* Profile History */
+
+.profile-history {
+	background: #394458;
+	border: 1px solid #cad7e1;
+	border-radius: 0.25em;
+	margin-right: 1%;
+	margin-top: 1.5em;
+	padding: 0 1em;
+	width: 64%;
+}
+
+.profile-history-timeline {
+	height: 100%;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	position: absolute;
+}
+
+.profile-history-timeline .bar {
+	background: #e8ecf1;
+	height: 100%;
+	margin-left: 89%;
+	width: 1px;
+}
+
+.profile-history-events {
+	margin: 0.25em 0;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+}
+
+.profile-history-events:hover {
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 0.25em;
+}
+
+.profile-history-marker,
+.profile-history-date {
+	padding: 0;
+}
+
+.profile-history-date {
+	color: #e8ecf1;
+	font-size: 0.9em;
+	font-weight: bold;
+	line-height: 2.25em;
+}
+
+.profile-history-dot {
+	/*height: 2em;
+	line-height: 1.75em;*/
+	padding: 0;
+	text-align: center;
+	/*width: 2em;*/
+}
+
+.profile-history-dot i {
+	background: #394458;
+	border: 1px solid #e8ecf1;
+	border-radius: 2em;
+	color: #e8ecf1;
+	font-size: 2em;
+	height: 1em;
+	left: 0;
+	line-height: 0.95em;
+	position: absolute;
+	width: 1em;
+}
+
+.profile-history-event h5 {
+	color: #e8ecf1;
+	margin-top: 0.5em;
+}
+
 /* Location Map */
 
 .profile-map {
@@ -1249,8 +1324,10 @@ a, a:hover, a:focus, a:active {
 	border: 1px solid #cad7e1;
 	border-radius: 0.25em;
 	margin-top: 1.5em;
+	margin-left: 1%;
 	min-height: 20em;
 	padding: 1em;
+	width: 34%
 }
 
 .profile-map iframe {
@@ -1493,6 +1570,114 @@ a, a:hover, a:focus, a:active {
 	width: 100%;
 }
 
+.user-badge.badge-list:nth-child(even) {
+	background: #e8ecf1;
+}
+
+.user-badge.badge-list {
+	margin: 0;
+	min-height: 3.5em;
+	padding: 0.5em;
+}
+
+.user-badge.badge-list .user-avatar {
+	text-align: center;
+}
+
+.user-badge.badge-list .user-avatar img {
+	height: 2.5em;
+	width: 2.5em;
+}
+
+.user-badge.badge-list .user-name h4 {
+	font-size: 1.1em;
+	line-height: 1.5em;
+}
+
+.user-badge.badge-list .user-title h5 {
+	line-height: 2.25em;
+}
+
+.user-badge.badge-list .user-registered {
+	line-height: 2.75em;
+}
+
+
+/*
+ * BRDLOGIN
+ */
+
+.login {
+	height: 16em;
+	left: 50%;
+	margin: -8em;
+	position: absolute;
+	top: 50%;
+	width: 16em;
+}
+
+.login h2 {
+	font-weight: bold;
+}
+
+.login h2 em {
+	font-size: 0.5em;
+	font-weight: normal;
+	margin-left: -0.5em;
+}
+
+.login input {
+	margin: 0.5em 0;
+	width: 100%;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+	background: #eee;
+	border: 0;
+	border-radius: 0.25em;
+	box-shadow: 0 2px 4px #cad7e1 inset, 0 1px 0 #fff;
+	color: #283d67;
+	outline: none;
+	padding: 0.5em 1em;
+}
+
+.login input[type="text"]:active,
+.login input[type="text"]:focus,
+.login input[type="password"]:active,
+.login input[type="password"]:focus {
+	background: #e8ecf1;
+	box-shadow: 0 2px 4px #d4d9dd inset, 0 1px 0 #fff;
+}
+
+
+/*
+ * BRDRULES
+ */
+
+.rules-detail {
+	background: #fff;
+	border: 1px solid #cad7e1;
+	border-radius: 0.25em;
+	padding: 1em;
+}
+
+#affix {
+	background: #fff;
+	border: 1px solid #cad7e1;
+	border-radius: 0.25em;
+	padding: 1em 0;
+	position: static;
+}
+
+#affix li {
+	border-left: 0.25em solid #fff;
+}
+
+#affix li.active {
+	border-left-color: #428bca;
+	font-weight: bold;
+}
 
 
 /*
