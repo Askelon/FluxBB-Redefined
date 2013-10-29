@@ -509,101 +509,57 @@ a, a:hover, a:focus, a:active {
  * BRDPOST
  */
 
-#postform .postform-title {
-	font-size: 2em;
+.post-new .post-box {
+	min-height: 32em;
 }
 
-#postform .postform-title::before {
-	color: #cad7e1;
-	content: '\270e';
-	font-family: 'entypo';
-	font-size: 1.5em;
-	line-height: 0.5em;
-	margin-right: 0.25em;
+.topic-title.new-topic-title {
+	font-size: 1.25em !important;
+	padding: 0.5em !important;
 }
 
-#postform .box {
-	background: #fff;
-	border: 1px solid #cad7e1;
+.new-topic-title input {
+	background: rgba(255, 255, 255, 0.25);
+	border: 0;
 	border-radius: 0.25em;
-	padding: 1em;
-}
-
-#postform .nav-tabs>li.active>a,
-#postform .nav-tabs>li.active>a:hover,
-#postform .nav-tabs>li.active>a:focus {
-	background-color: #fff;
-}
-
-#postform .edit-topic a::before,
-#postform .preview-topic a::before {
-	color: #cad7e1;
-	font-family: 'entypo';
-	font-size: 1.5em;
-	line-height: 0.5em;
-	margin-right: 0.25em;
-}
-
-#postform .edit-topic a::before {
-	content: '\2328';
-}
-
-#postform .preview-topic a::before {
-	content: '\e74e';
-}
-
-#postform #topic-settings {
-	font-family: 'entypo';
-	font-size: 3em;
-	line-height: 0.45em;
-}
-
-#postform input.topic-title,
-#postform textarea.topic-message {
-	background: #fff;
-	box-shadow: 0 -2px 2px #efefef inset;
-	color: #666;
-	font-size: 1.5em;
-	margin-bottom: 0.5em;
+	color: #FFF;
 	outline: none;
 	padding: 0.25em 0.5em;
+	text-shadow: 0 1px 0 #283D67;
 	width: 100%;
 }
 
-#postform input.topic-title {
+.new-post-content {
+	position: relative;
+}
+
+.new-topic-message {
+	background: #e8ecf1;
 	border: 0;
-	border-bottom: 2px solid #d4d9dd;
+	border-radius: 0.25em;
+	color: #222;
+	min-height: 20em;
+	outline: none;
+	width: 100%;
 }
 
-#postform textarea.topic-message {
-	border: 1px solid #d4d9dd;
-	border-top: 0;
-	font-size: 1em;
-	height: 18em;
+.new-topic-preview {
+	display: none;
 }
 
-#postform .preview-message {
-	font-size: 1em;
-	height: 18em;
+#preview-post,
+#edit-post {
+	background: #FFF;
+	border-radius: 0 0 0 0.5em;
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: center;
+	width: 2em;
 }
 
-#postform .editor-box {
-	padding-left: 0;
-}
-
-#postform .option-box {
-	padding-right: 0;
-}
-
-#postform .topic-options {
-	border-bottom: 1px solid #cad7e1;
-	line-height: 1em;
-	margin-bottom: 1em;
-	padding: 0.25em 0 0.5em 0.5em;
-}
-
-#postform .submit-box {
-	margin-top: -3em;
+#edit-post {
+	display: none;
 }
 
 
@@ -713,7 +669,7 @@ a, a:hover, a:focus, a:active {
 	border: 1px solid #cad7e1;
 	border-radius: 0.25em;
 	min-height: 18em;
-	padding: 1em 1.5em;
+	padding: 1em 1.5em 8em 1.5em;
 	position: relative;
 }
 
