@@ -82,30 +82,29 @@
 							<li><a href="index.php">Index</a></li>
 							<li><strong><a href="viewforum.html">FluxBB</a></strong></li>
 							<li><strong><a href="viewforum.html">Redefined</a></strong></li>
+							<li><strong><a href="viewforum.html">Posts concepts</a></strong></li>
 						</ul>
 					</div>
 				</div>
 
-				<div id="postform">
+				<div id="vt" class="vtx">
 
-					<h2 class="postform-title"><span>Post new topic</span></h2>
+					<h2 class="topic-title"><span>Topic Title</span></h2>
 
-					<div class="box clearfix">
-					
-						<div id="post" class="dummyform">
-
-							<div class="clearfix">
-
-								<input class="topic-title" type="text" value="" maxlength="70" placeholder="Title:" />
-								
-								<div class="editor-box col-md-8 col-sm-12 col-xs-12">
-									<ul class="nav nav-tabs" id="tab">
-										<li class="edit-topic active"><a href="#edittopic" data-toggle="tab">Editor</a></li>
-										<li class="preview-topic"><a href="#previewtopic" data-toggle="tab">Preview</a></li>
-									</ul>
-									<div class="tab-content">
-										<div class="tab-pane active" id="edittopic">
-											<textarea class="topic-message" rows="12" cols="95">
+					<div id="post-new" class="post post-new post-bg clearfix">
+						<div class="author-box col-md-2 text-center">
+							<div class="author-name"><h4><a href="edit-profile.html">Cyrano</a></h4></div>
+							<div class="author-avatar"><img src="assets/img/cyrano.jpg" width="140" height="140" alt=""></div>
+						</div>
+						<div class="post-box col-md-10">
+							<div class="post-meta clearfix">
+								<div class="pull-left"><a href="viewtopic.html">2013-10-29 23:18:38</a></div>
+								<div class="pull-right">#1</div> 
+							</div>
+							<div class="post-content new-post-content">
+								<a id="edit-post" href="#"><i class="icon-keyboard icon-2x"></i></a>
+								<a id="preview-post" href="#"><i class="icon-eye icon-2x"></i></a>
+								<textarea class="new-topic-message" rows="12" cols="95">
 [h]This is a simple test.[/h]
 
 Editor should like [i]this[/i]. All-in-one editing and preview tool, BBCode or [i]whatever-we-want[/i] syntax thingie to make life easier. For as someone trully intelligent once said:
@@ -114,32 +113,74 @@ Editor should like [i]this[/i]. All-in-one editing and preview tool, BBCode or [
 [b]One does not simply[/b] put a raw post editor into FluxBB.
 [/quote]
 </textarea>
-										</div>
-										<div class="tab-pane" id="previewtopic">
-											<div class="preview-message">
-												<h3>This is a simple test.</h3>
-												<p>Editor should look somehow like <em>this</em>. All-in-one editing and preview tool, BBCode or <em>whatever-we-want</em> syntax thingie to make life easier. For as someone trully intelligent once said:</p>
-												<blockquote><strong>One does not simply</strong> put a raw post editor into FluxBB.</blockquote>
-											</div>
-										</div>
-									</div>
+								<div class="new-topic-preview">
+									<h3>This is a simple test.</h3>
+									<p>Editor should look somehow like <em>this</em>. All-in-one editing and preview tool, BBCode or <em>whatever-we-want</em> syntax thingie to make life easier. For as someone trully intelligent once said:</p>
+									<blockquote><strong>One does not simply</strong> put a raw post editor into FluxBB.</blockquote>
 								</div>
-								<div class="option-box col-md-4 col-sm-12 col-xs-12">
-									<h4 class="topic-options">Options</h4>
+							</div>
+							<div class="post-footer">
+								<div class="col-md-8">
 									<div class="checkbox"><label><input type="checkbox" value="">Never show smilies as icons for this post</label></div>
 									<div class="checkbox"><label><input type="checkbox" value="">Subscribe to this topic</label></div>
 								</div>
-								
-							</div>
-
-							<div class="submit-box pull-right">
-								<div class="btn-group postlink">
+								<div class="text-right col-md-4">
 									<input class="btn btn-danger delete-topic" type="submit" value="Trash" />
 									<input class="btn btn-warning save-topic" type="submit" value="Save" />
 									<input class="btn btn-success submit-topic" type="submit" value="Submit" />
 								</div>
 							</div>
+						</div>
+					</div>
 
+					<div id="previous-posts" class="post post-bg previous-posts clearfix">
+
+						<div class="previous-post clearfix">
+							<div class="author-box text-center col-md-2">
+								<div class="author-name"><h5>Cyrano</h5></div>
+								<div class="author-avatar"><img src="assets/img/cyrano.jpg" alt=""></div>
+							</div>
+							<div class="post-box col-md-10">
+								<div class="post-meta clearfix">
+									<div class="pull-left">2009-10-05 23:18:38</div>
+									<div class="pull-right">#9</div> 
+								</div>
+								<div class="post-content">
+									<p>Gallia est omnis divisa in partes tres, quarum unam incolunt Belgae, aliam Aquitani, tertiam qui ipsorum lingua Celtae, nostra Galli appellantur. Hi omnes lingua, institutis, legibus inter se differunt.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="previous-post clearfix">
+							<div class="author-box text-center col-md-2">
+								<div class="author-name"><h5>Cyrano</h5></div>
+								<div class="author-avatar"><img src="assets/img/cyrano.jpg" alt=""></div>
+							</div>
+							<div class="post-box col-md-10">
+								<div class="post-meta clearfix">
+									<div class="pull-left">2009-10-05 23:18:38</div>
+									<div class="pull-right">#9</div> 
+								</div>
+								<div class="post-content">
+									<p>Gallia est omnis divisa in partes tres, quarum unam incolunt Belgae, aliam Aquitani, tertiam qui ipsorum lingua Celtae, nostra Galli appellantur. Hi omnes lingua, institutis, legibus inter se differunt.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="previous-post clearfix">
+							<div class="author-box text-center col-md-2">
+								<div class="author-name"><h5>Cyrano</h5></div>
+								<div class="author-avatar"><img src="assets/img/cyrano.jpg" alt=""></div>
+							</div>
+							<div class="post-box col-md-10">
+								<div class="post-meta clearfix">
+									<div class="pull-left">2009-10-05 23:18:38</div>
+									<div class="pull-right">#9</div> 
+								</div>
+								<div class="post-content">
+									<p>Gallia est omnis divisa in partes tres, quarum unam incolunt Belgae, aliam Aquitani, tertiam qui ipsorum lingua Celtae, nostra Galli appellantur. Hi omnes lingua, institutis, legibus inter se differunt.</p>
+								</div>
+							</div>
 						</div>
 
 					</div>
@@ -167,7 +208,7 @@ Editor should like [i]this[/i]. All-in-one editing and preview tool, BBCode or [
 							</select>
 						</div>
 						<div class="form-group">
-							<input type="submit" class="form-control" value=" Go " accesskey="g" />
+							<input type="submit" class="form-control" value=" Go " />
 						</div>
 					</form>
 
@@ -184,6 +225,22 @@ Editor should like [i]this[/i]. All-in-one editing and preview tool, BBCode or [
 
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+		(function($) {
+			$('#preview-post').click(function(e) {
+				e.preventDefault();
+				$(this).hide();
+				$('#edit-post').show();
+				$('.new-topic-message, .new-topic-preview').toggle();
+			});
+			$('#edit-post').click(function(e) {
+				e.preventDefault();
+				$(this).hide();
+				$('#preview-post').show();
+				$('.new-topic-message, .new-topic-preview').toggle();
+			});
+		})(jQuery);
+		</script>
 
 	</body>
 

@@ -27,9 +27,6 @@
 body {
 	background: #F6F9FC;
 	font-family: 'Source Sans Pro', sans-serif;
-	/*font-family: 'Cantarell';
-	font-family: 'Archivo Narrow';
-	font-family: 'PT Sans Caption';*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -46,33 +43,23 @@ a, a:hover, a:focus, a:active {
 	text-decoration: none;
 }
 
-
-/*
- * Override
- */
-
-/*.col-md-9 {
-	width: 74%;
-}
-
-.col-md-3 {
-	width: 24%;
-}
-
-.col-md-9.pull-right {
-	margin-left: 1%;
-}
-
-.col-md-3.pull-left {
-	margin-right: 1%;
-}*/
-
 /*
  * BRDHEADER
  */
 
 #brdheader {
-	background: url(assets/img/header.jpg) left top no-repeat;
+	background-image: linear-gradient(right bottom, rgb(66,138,202) 0%, rgb(40,61,103) 100%);
+	background-image: -o-linear-gradient(right bottom, rgb(66,138,202) 0%, rgb(40,61,103) 100%);
+	background-image: -moz-linear-gradient(right bottom, rgb(66,138,202) 0%, rgb(40,61,103) 100%);
+	background-image: -webkit-linear-gradient(right bottom, rgb(66,138,202) 0%, rgb(40,61,103) 100%);
+	background-image: -ms-linear-gradient(right bottom, rgb(66,138,202) 0%, rgb(40,61,103) 100%);
+	background-image: -webkit-gradient(
+		linear,
+		right bottom,
+		left top,
+		color-stop(0, rgb(66,138,202)),
+		color-stop(1, rgb(40,61,103))
+	);
 	border: 1px solid #cad7e1;
 	border-bottom: 0;
 	border-radius: 0.25em 0.25em 0 0;
@@ -193,7 +180,7 @@ a, a:hover, a:focus, a:active {
 }
 
 #brdwelcome .nav a:hover,  #brdwelcome .nav a:focus {
-	background: #294b7a;
+	background: #2b4069;
 	color: #fff;
 	text-shadow: 0 1px 0 #283d67;
 }
@@ -285,7 +272,18 @@ a, a:hover, a:focus, a:active {
 
 .idx,
 .vfx {
-	background: url(assets/img/idx-header.jpg) center top no-repeat;
+	background-image: linear-gradient(right bottom, rgb(66,138,202) 0%, rgb(40,61,103) 100%);
+	background-image: -o-linear-gradient(right bottom, rgb(66,138,202) 0%, rgb(40,61,103) 100%);
+	background-image: -moz-linear-gradient(right bottom, rgb(66,138,202) 0%, rgb(40,61,103) 100%);
+	background-image: -webkit-linear-gradient(right bottom, rgb(66,138,202) 0%, rgb(40,61,103) 100%);
+	background-image: -ms-linear-gradient(right bottom, rgb(66,138,202) 0%, rgb(40,61,103) 100%);
+	background-image: -webkit-gradient(
+		linear,
+		right bottom,
+		left top,
+		color-stop(0, rgb(66,138,202)),
+		color-stop(1, rgb(40,61,103))
+	);
 	border: 1px solid #cad7e1;
 	border-radius: 0.25em;
 	margin-bottom: 1em;
@@ -309,7 +307,6 @@ a, a:hover, a:focus, a:active {
 
 .idx > .category-title,
 .vfx > .forum-title {
-	background: rgba(72, 112, 162, 0.75);
 	border-radius: 0.2em 0.2em 0 0;
 	color: #fff;
 	font-size: 1.5em;
@@ -519,7 +516,8 @@ a, a:hover, a:focus, a:active {
 }
 
 .new-topic-title input {
-	background: rgba(255, 255, 255, 0.25);
+	background: rgba(255, 255, 255, 0.1);
+	/*background: transparent;*/
 	border: 0;
 	border-radius: 0.25em;
 	color: #FFF;
@@ -527,6 +525,11 @@ a, a:hover, a:focus, a:active {
 	padding: 0.25em 0.5em;
 	text-shadow: 0 1px 0 #283D67;
 	width: 100%;
+}
+
+.new-topic-title input:active,
+.new-topic-title input:focus {
+	background: rgba(255, 255, 255, 0.25);
 }
 
 .new-post-content {
@@ -549,7 +552,7 @@ a, a:hover, a:focus, a:active {
 
 #preview-post,
 #edit-post {
-	background: #FFF;
+	background: #fff;
 	border-radius: 0 0 0 0.5em;
 	position: absolute;
 	top: 0;
@@ -560,6 +563,23 @@ a, a:hover, a:focus, a:active {
 
 #edit-post {
 	display: none;
+}
+
+.previous-post {
+	margin: 1em 0;
+}
+
+.previous-post .post-box {
+	min-height: 8em;
+	padding: 1em 1.5em;
+}
+
+.previous-post .author-box {
+	padding: 0 1em;
+}
+
+.previous-post .author-avatar img {
+	width: 4em;
 }
 
 
@@ -813,6 +833,7 @@ a, a:hover, a:focus, a:active {
 
 #quickpost .post-box {
 	min-height: 10em;
+	padding-bottom: 1.5em;
 }
 
 #quickpost .new-post-submit .btn {
@@ -1678,19 +1699,3 @@ a, a:hover, a:focus, a:active {
 	margin-top: 1em;
 	padding: 1em 1em 2em 1em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
